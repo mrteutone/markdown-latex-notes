@@ -67,14 +67,14 @@ The cross entropy for the distributions *p* and *q* over a given set is defined 
 ## Cross-entropy error function and logistic regression ##
 See [wikipedia](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_error_function_and_logistic_regression).
 With the *logistic function* $g(z) = \frac 1 {1 + e^{-z}}$ and $y\in\{0, 1\}$ the probability of finding $y = 1$ is given by:
-$$
+$$\phantom.
   q_{y = 1} = \hat y \equiv g(\mathbf w \cdot \mathbf x)
 $$
 
 Let $y \in \{0, 1\}$ be the true label and $\hat y$ the estimation.
 Having set up the notation $p \in \{y, 1-y\}$ and $q\in \{\hat y, 1 - \hat y\}$,
 we can use cross entropy to get a measure for similarity between *p* and *q*:
-$$
+$$\phantom.
   H(p,q)\ = -\sum_i p_i \log q_i = -y \log \hat y - (1 - y) \log(1- \hat y)
 $$
 
